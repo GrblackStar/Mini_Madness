@@ -1,7 +1,7 @@
 public enum PieceType
 {
     Pawn,
-    Bishob,
+    Bishop,
     Knight,
     Rook,
     Queen,

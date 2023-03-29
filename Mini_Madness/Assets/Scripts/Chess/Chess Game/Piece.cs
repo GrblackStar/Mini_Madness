@@ -29,6 +29,11 @@ public abstract class Piece : MonoBehaviour
 
     public void SetMaterial(Material selectedMaterial)
     {
+        // if it's null, it caches it again
+        if (materialSetter == null)
+        {
+            materialSetter = GetComponent<MaterialSetter>();
+        }
         materialSetter.SetSingleMaterial(selectedMaterial);
     }
 
